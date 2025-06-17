@@ -305,7 +305,6 @@ document.addEventListener('keydown', (e) => {
 function togglePauseMenu(show) {
     const menu = document.getElementById("pauseMenu");
     menu.style.display = show ? "block" : "none";
-    document.getElementById("restartButton").style.display = "inline-block";
 
     
 }
