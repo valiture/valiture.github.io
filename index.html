@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+
+<body>
+
+    <div id="canvas-container">
+        <canvas id="gameCanvas" width="1600" height="800"">Error</canvas>
+        <div id=" gameStats">
+    </div>
+    <div id="pauseMenu">
+        <h2 id="pauseMenuHeader">Paused</h2>
+        <p id="pauseMenuText">Press ESC to resume</p>
+        <button id="restartButton">Restart Game</button>
+    </div>
+    <div id="upgradeMenu">
+        <div class="upgradeOption">
+            <button id="upgradeHealth">Upgrade Health</button>
+            <p id="healthUpgradeInfo"></p>
+        </div>
+        <div class="upgradeOption">
+            <button id="upgradeAttack">Upgrade Attack</button>
+            <p id="attackUpgradeInfo"></p>
+        </div>
+        <div class="upgradeOption">
+            <button id="upgradeSpeed">Upgrade Speed (bullet/movement)</button>
+            <p id="speedUpgradeInfo"></p>
+        </div>
+        <div class="upgradeOption">
+            <button id="upgradeHealthRegen">Upgrade Health Regen</button>
+            <p id="healthRegenUpgradeInfo"></p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script src=" script.js"></script>
+</body>
+
+</html>

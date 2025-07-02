@@ -1,0 +1,84 @@
+#canvas-container {
+    width: 100%;
+    text-align: center;
+}
+
+canvas {
+    background-color: gray;
+}
+
+body {
+    background-color: black;
+}
+
+#gameStats {
+    margin-top: 10px;
+    font-family: monospace;
+    background: #111;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+
+#restartButton {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#pauseMenu {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#upgradeMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 1400px;
+    height: 400px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: black;
+
+}
+
+.upgradeOption {
+    flex: 1;
+    display: flex;
+}
+
+.upgradeOption button {
+    flex: none;
+    width: 700px;
+    background-color: darkgray;
+    font-family: monospace;
+    font-size: 16px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 2px;
+}
+
+.upgradeOption p {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    border: solid 1px white;
+}
