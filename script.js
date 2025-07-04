@@ -1,5 +1,6 @@
 window.onload(loadGameInfo);
 let gameInfo = document.getElementById("tutorialInfo");
+console.log(gameInfo);
 function loadGameInfo() {
     isPaused = true;
     gameInfo.style.display = 'flex';
