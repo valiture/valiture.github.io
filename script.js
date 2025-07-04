@@ -1,3 +1,9 @@
+window.onload(loadGameInfo);
+let gameInfo = document.getElementById("tutorialInfo");
+function loadGameInfo() {
+    gameInfo.style.display = 'flex';
+}
+
 let animatonFrameId = 0;
 //initialize
 const canvas = document.getElementById("gameCanvas");
