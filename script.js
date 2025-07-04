@@ -514,9 +514,10 @@ document.getElementById("restartButton").addEventListener("click", () => {
     player.bulletDamage = playerDefaultDamage;
     player.speed = playerDefaultSpeed;
     player.health = playerDefaultHealth;
-    player.max = playerDefaultHealth;
+    player.maxHealth = playerDefaultHealth;
     player.healthRegen = playerDefaultHealthRegen;
     startTime = Date.now();
+    enemyHealth = 50;
 
     //reset game
     enemies.length = 0;
