@@ -82,3 +82,7 @@ body {
     font-family: monospace;
     border: solid 1px white;
 }
+
+#tutorialInfo {
+    display: none;
+}
