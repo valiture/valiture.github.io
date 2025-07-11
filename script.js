@@ -1,9 +1,4 @@
 const celloSuite = new Audio("sfx/cello suite.mp3");
-celloSuite.onended = replaySong();
-function replaySong() {
-    celloSuite.play();
-    console.log("song ended");
-}
 
 let animatonFrameId = 0;
 //initialize
@@ -425,6 +420,11 @@ function togglePauseMenu(show) {
     menu.style.display = show ? "block" : "none";
 }
 
+celloSuite.onended = replaySong();
+function replaySong() {
+    celloSuite.play();
+    console.log("song ended");
+}
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
