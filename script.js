@@ -232,6 +232,7 @@ document.addEventListener('keydown', (e) => {
         const menu = document.getElementById("upgradeMenu");
         const isVisible = menu.style.display === "flex";
         toggleUpgradeMenu(!isVisible);
+        Audio("")
     }
 });
 
