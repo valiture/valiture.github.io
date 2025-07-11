@@ -224,7 +224,7 @@ function updateGold() {
 
     }
 }
-
+const menuOpenAudio = new Audio("sfx/menuOpen.wav");
 //add upgrade menu when m is pressed isUpgrading is declared to pause the game
 let isUpgrading = false;
 document.addEventListener('keydown', (e) => {
@@ -232,7 +232,7 @@ document.addEventListener('keydown', (e) => {
         const menu = document.getElementById("upgradeMenu");
         const isVisible = menu.style.display === "flex";
         toggleUpgradeMenu(!isVisible);
-        Audio("")
+        menuOpenAudio.play();
     }
 });
 
@@ -518,6 +518,7 @@ document.getElementById("restartButton").addEventListener("click", () => {
     player.maxHealth = playerDefaultHealth;
     player.healthRegen = playerDefaultHealthRegen;
     startTime = Date.now();
+    elapsedMinutes = 0;
     enemyHealth = 50;
 
     //reset game
