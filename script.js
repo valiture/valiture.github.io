@@ -1,3 +1,10 @@
+const celloSuite = new Audio();
+celloSuite.play();
+celloSuite.onended = replaySong() {
+    celloSuite.play();
+    console.log("song ended);
+}
+
 let animatonFrameId = 0;
 //initialize
 const canvas = document.getElementById("gameCanvas");
