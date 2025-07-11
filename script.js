@@ -3,7 +3,7 @@ celloSuite.play();
 celloSuite.onended = replaySong();
 function replaySong() {
     celloSuite.play();
-    console.log("song ended);
+    console.log("song ended");
 }
 
 let animatonFrameId = 0;
