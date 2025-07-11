@@ -1,4 +1,4 @@
-const celloSuite = new Audio();
+const celloSuite = new Audio("sfx/cello suite.mp3");
 celloSuite.play();
 celloSuite.onended = replaySong() {
     celloSuite.play();
