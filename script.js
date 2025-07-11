@@ -1,5 +1,4 @@
 const celloSuite = new Audio("sfx/cello suite.mp3");
-celloSuite.play();
 celloSuite.onended = replaySong();
 function replaySong() {
     celloSuite.play();
@@ -241,6 +240,7 @@ document.addEventListener('keydown', (e) => {
         const isVisible = menu.style.display === "flex";
         toggleUpgradeMenu(!isVisible);
         menuOpenAudio.play();
+        celloSuite.play();
     }
 });
 
