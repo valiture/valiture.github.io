@@ -1,6 +1,7 @@
 const celloSuite = new Audio("sfx/cello suite.mp3");
 celloSuite.play();
-celloSuite.onended = replaySong() {
+celloSuite.onended = replaySong();
+function replaySong() {
     celloSuite.play();
     console.log("song ended);
 }
